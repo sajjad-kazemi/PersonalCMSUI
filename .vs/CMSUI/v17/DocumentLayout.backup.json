@@ -1,7 +1,40 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\core\\interceptors\\auth.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\core\\interceptors\\auth.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\core\\auth\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\core\\auth\\auth.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\app.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\app.config.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\shared\\header\\header.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\shared\\header\\header.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\shared\\header\\header.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\shared\\header\\header.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\shared\\footer\\footer.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\shared\\footer\\footer.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\app.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|c:\\users\\s.kazemi.pouyaandishan\\desktop\\work archive\\work\\ui\\cmsui\\src\\app\\app.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5312796-119B-0ABC-2F82-FC89374EE5D2}|C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI|solutionrelative:cmsui\\src\\app\\app.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,6 +67,110 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{65ddf8c3-8f89-4077-a6c6-dbb8853aab13}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "app.html",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\app.html",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\app.html",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\app.html",
+              "RelativeToolTip": "CMSUI\\src\\app\\app.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-17T10:25:13.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "app.ts",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\app.ts",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\app.ts",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\app.ts",
+              "RelativeToolTip": "CMSUI\\src\\app\\app.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T10:25:32.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "header.ts",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\shared\\header\\header.ts",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\shared\\header\\header.ts",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\shared\\header\\header.ts",
+              "RelativeToolTip": "CMSUI\\src\\app\\shared\\header\\header.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T10:29:11.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "footer.ts",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\shared\\footer\\footer.ts",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\shared\\footer\\footer.ts",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\shared\\footer\\footer.ts",
+              "RelativeToolTip": "CMSUI\\src\\app\\shared\\footer\\footer.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T10:32:05.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "header.html",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\shared\\header\\header.html",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\shared\\header\\header.html",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\shared\\header\\header.html",
+              "RelativeToolTip": "CMSUI\\src\\app\\shared\\header\\header.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-17T10:35:18.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "app.config.ts",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\app.config.ts",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\app.config.ts",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\app.config.ts",
+              "RelativeToolTip": "CMSUI\\src\\app\\app.config.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T11:50:11.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "auth.ts",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\core\\auth\\auth.ts",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\core\\auth\\auth.ts",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\core\\auth\\auth.ts",
+              "RelativeToolTip": "CMSUI\\src\\app\\core\\auth\\auth.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T12:16:37.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "auth.interceptor.ts",
+              "DocumentMoniker": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\core\\interceptors\\auth.interceptor.ts",
+              "RelativeDocumentMoniker": "CMSUI\\src\\app\\core\\interceptors\\auth.interceptor.ts",
+              "ToolTip": "C:\\Users\\s.kazemi.POUYAANDISHAN\\Desktop\\Work Archive\\work\\UI\\CMSUI\\src\\app\\core\\interceptors\\auth.interceptor.ts",
+              "RelativeToolTip": "CMSUI\\src\\app\\core\\interceptors\\auth.interceptor.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-11-17T12:19:09.217Z",
+              "EditorCaption": ""
             }
           ]
         },
