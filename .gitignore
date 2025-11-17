@@ -1,0 +1,42 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+CMSUI/dist
+CMSUI/tmp
+CMSUI/out-tsc
+CMSUI/bazel-out
+
+# Node
+CMSUI/node_modules
+CMSUI/npm-debug.log
+CMSUI/yarn-error.log
+
+# IDEs and editors
+CMSUI/./idea/
+CMSUI/.project
+CMSUI/.classpath
+CMSUI/.c9/
+CMSUI/*.launch
+CMSUI/.settings/
+CMSUI/*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+CMSUI/!.vscode/settings.json
+CMSUI/!.vscode/tasks.json
+CMSUI/!.vscode/launch.json
+CMSUI/!.vscode/extensions.json
+CMSUI/.history/*
+
+# Miscellaneous
+CMSUI/.angular/cache
+CMSUI/.sass-cache/
+CMSUI/connect.lock
+CMSUI/coverage
+CMSUI/libpeerconnection.log
+CMSUI/testem.log
+CMSUI/typings
+
+# System files
+CMSUI/.DS_Store
+CMSUI/Thumbs.db
