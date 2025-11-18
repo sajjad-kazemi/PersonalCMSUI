@@ -1,6 +1,7 @@
 import { Routes } from '@angular/router';
-import { Home } from './home/home'
 
 export const routes: Routes = [
-  { path: '', component: Home },
+  // Fallback when no prior route is matched
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '**', redirectTo: '/login', pathMatch: 'full' },
 ];
