@@ -1,97 +1,62 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  afterNextRender,
+  ChangeDetectionStrategy,
+  Component,
+  effect,
+  inject,
+  PLATFORM_ID,
+} from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { I18nService, LanguageSelectorComponent } from '@app/i18n';
-import { Title } from '@angular/platform-browser';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { environment } from '@env/environment';
-import { filter, merge } from 'rxjs';
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
-import { AppUpdateService, Logger } from '@core/services';
-import { SocketIoService } from '@core/socket-io';
+import { HeaderComponent } from '~shared/components/header/header.component';
+import { FooterComponent } from '~shared/components/footer/footer.component';
+import { filter, map } from 'rxjs';
+import { HeaderService } from '~core/services/ui/header.service';
+import { CookiePopupComponent } from '~shared/components/cookie-popup/cookie-popup.component';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { ToastStackComponent } from '~shared/components/toast-stack/toast-stack.component';
+import { AnalyticsService } from '~core/services/analytics.service';
+import { isPlatformBrowser } from '@angular/common';
+import { SeoService } from '~core/services/seo.service';
 
-@UntilDestroy()
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TranslateModule],
-  template: '<router-outlet></router-outlet>',
+  imports: [
+    RouterOutlet,
+    HeaderComponent,
+    FooterComponent,
+    CookiePopupComponent,
+    ToastStackComponent,
+  ],
+  templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AppComponent implements OnInit, OnDestroy {
-  title = 'angular-boilerplate';
+export class AppComponent {
+  private readonly router = inject(Router);
+  private readonly headerService = inject(HeaderService);
+  private readonly seoService = inject(SeoService);
+  private readonly analyticsService = inject(AnalyticsService);
+  private readonly platformId = inject(PLATFORM_ID);
 
-  constructor(
-    private readonly _router: Router,
-    private readonly _titleService: Title,
-    private readonly _translateService: TranslateService,
-    private readonly _i18nService: I18nService,
-    private readonly _socketService: SocketIoService,
-    private readonly _updateService: AppUpdateService,
-  ) {}
+  readonly isBrowser = isPlatformBrowser(this.platformId);
+  readonly currentUrl = toSignal(
+    this.router.events.pipe(
+      filter((event): event is NavigationEnd => event instanceof NavigationEnd),
+      map((event) => event.urlAfterRedirects),
+    ),
+    { initialValue: this.router.url },
+  );
 
-  ngOnInit() {
-    // Setup logger
-    if (environment.production) {
-      Logger.enableProductionMode();
-    }
-
-    // Initialize i18nService with default language and supported languages
-    this._i18nService.init(
-      environment.defaultLanguage,
-      environment.supportedLanguages,
-    );
-
-    const onNavigationEnd = this._router.events.pipe(
-      filter((event) => event instanceof NavigationEnd),
-    );
-
-    merge(this._translateService.onLangChange, onNavigationEnd)
-      .pipe(untilDestroyed(this))
-      .subscribe((event) => {
-        const titles = this.getTitle(
-          this._router.routerState,
-          this._router.routerState.root,
-        );
-
-        if (titles.length === 0) {
-          this._titleService.setTitle(this._translateService.instant('Home'));
-        } else {
-          const translatedTitles = titles.map((titlePart) =>
-            this._translateService.instant(titlePart),
-          );
-          const allTitlesSame = translatedTitles.every(
-            (title, _, arr) => title === arr[0],
-          );
-          this._titleService.setTitle(
-            allTitlesSame ? translatedTitles[0] : translatedTitles.join(' | '),
-          );
-        }
-
-        if (event['lang']) {
-          // Uncomment the following line to force a reload of the page when the language changes if needed for translations from backend
-          // window.location.reload();
-        }
+  constructor() {
+    this.seoService.setBasicTags();
+    effect(() => {
+      const url = this.currentUrl();
+      this.headerService.setCanonical(url);
+    });
+    if (this.isBrowser) {
+      afterNextRender(() => {
+        this.analyticsService.loadGA4Script();
       });
-
-    // Connect to Socket
-    this._socketService.connect();
-
-    // update service
-    this._updateService.subscribeForUpdates();
-  }
-
-  getTitle(state: any, parent: any): any[] {
-    const data = [];
-    if (parent && parent.snapshot.data && parent.snapshot.data.title) {
-      data.push(parent.snapshot.data.title);
     }
-
-    if (state && parent) {
-      data.push(...this.getTitle(state, state.firstChild(parent)));
-    }
-    return data;
-  }
-
-  ngOnDestroy() {
-    this._i18nService.destroy();
   }
 }

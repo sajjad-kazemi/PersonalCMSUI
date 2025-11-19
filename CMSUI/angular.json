@@ -3,13 +3,13 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-boilerplate": {
+    "angularexampleapp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss",
-          "standalone": false,
-          "skipTests": true
+          "standalone": true,
+          "changeDetection": "OnPush"
         }
       },
       "root": "",
@@ -19,48 +19,73 @@
         "build": {
           "builder": "@angular/build:application",
           "options": {
-            "outputPath": "dist/angular-boilerplate",
+            "outputPath": "dist/angularexampleapp",
+            "outputHashing": "all",
             "index": "src/index.html",
             "browser": "src/main.ts",
-            "polyfills": ["zone.js", "@angular/localize/init", "reflect-metadata"],
+            "outputMode": "static",
+            "server": "src/main.server.ts",
+            "ssr": false,
+            "polyfills": ["@angular/localize/init"],
             "tsConfig": "tsconfig.app.json",
+            "localize": ["es", "en"],
+            "i18nMissingTranslation": "error",
             "inlineStyleLanguage": "scss",
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
+                "output": ""
               }
             ],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "styles": ["@shoelace-style/shoelace/dist/themes/light.css", "src/styles/global.scss"],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/styles"]
+            },
+            "budgets": [
+              {
+                "type": "initial",
+                "maximumWarning": "500kB",
+                "maximumError": "600kB"
+              },
+              {
+                "type": "anyComponentStyle",
+                "maximumWarning": "4kB",
+                "maximumError": "8kB"
+              }
+            ]
           },
           "configurations": {
             "production": {
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "1MB",
-                  "maximumError": "3MB"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "5KB",
-                  "maximumError": "8kB"
-                }
-              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
+                  "with": "src/environments/environment.production.ts"
                 }
-              ],
-              "outputHashing": "all",
-              "serviceWorker": "ngsw-config.json"
+              ]
             },
-            "development": {
+            "production-sourcemaps": {
+              "sourceMap": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.production.ts"
+                }
+              ]
+            },
+            "localhost-en": {
+              "outputHashing": "none",
               "optimization": false,
-              "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "localize": ["en"],
+              "budgets": []
+            },
+            "localhost-es": {
+              "outputHashing": "none",
+              "optimization": false,
+              "sourceMap": true,
+              "localize": ["es"],
+              "budgets": []
             }
           },
           "defaultConfiguration": "production"
@@ -68,47 +93,57 @@
         "serve": {
           "builder": "@angular/build:dev-server",
           "configurations": {
-            "production": {
-              "buildTarget": "angular-boilerplate:build:production"
+            "localhost-en": {
+              "buildTarget": "angularexampleapp:build:localhost-en"
             },
-            "development": {
-              "buildTarget": "angular-boilerplate:build:development"
+            "localhost-es": {
+              "buildTarget": "angularexampleapp:build:localhost-es"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "localhost-en"
         },
         "extract-i18n": {
-          "builder": "@angular/build:extract-i18n"
+          "builder": "ng-extract-i18n-merge:ng-extract-i18n-merge",
+          "options": {
+            "buildTarget": "angularexampleapp:build",
+            "format": "xlf",
+            "outputPath": "src/locale",
+            "targetFiles": ["messages.es.xlf"],
+            "prettyNestedTags": true,
+            "sort": "stableAppendNew"
+          }
         },
         "test": {
-          "builder": "@angular/build:karma",
+          "builder": "@angular/build:unit-test",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing", "@angular/localize/init"],
             "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              },
-              "src/robots.txt",
-              "src/assets"
-            ],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "buildTarget": "angularexampleapp:build:localhost-es",
+            "runner": "vitest"
           }
         },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
-            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html"]
+            "lintFilePatterns": ["src/**/*.ts", "src/**/*.html", "scripts/**/*.js"]
+          }
+        }
+      },
+      "i18n": {
+        "sourceLocale": {
+          "code": "en",
+          "subPath": ""
+        },
+        "locales": {
+          "es": {
+            "translation": "src/locale/messages.es.xlf",
+            "subPath": "es"
           }
         }
       }
     }
   },
   "cli": {
-    "analytics": false,
+    "analytics": "49e1320d-9031-4d19-bb7c-2d84a0f2fd49",
     "schematicCollections": ["@angular-eslint/schematics"]
   },
   "schematics": {

@@ -1,9 +1,9 @@
-import { env } from './.env';
+// This file can be replaced during build by using the `fileReplacements` array.
+// `ng build` replaces `environment.ts` with `environment.production.ts`.
+// The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-	production: false,
-	version: env['npm_package_version'] + '-dev',
-	defaultLanguage: 'de-DE',
-	supportedLanguages: ['de-DE', 'en-US', 'es-ES', 'fr-FR', 'it-IT'],
-	apiUrl: 'http://localhost:5039',
+  domain: 'http://localhost:4200',
+  // ApiBaseUrl: 'http://localhost:3000', // For local development with https://github.com/Ismaestro/nestjs-example-app
+  apiBaseUrl: 'https://nestjs-example-app.fly.dev',
 };
