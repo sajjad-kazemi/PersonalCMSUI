@@ -8,3 +8,43 @@
 ^.*\.vb$
 ^.*\.cp?p?$
 ^.*\.hp?p?$
+
+
+# controller.cs
+(?i).*controller\.cs$
+
+# service.cs
+(?i).*service\.cs$
+
+# other .cs (not controller or service)
+(?i)(?!.*(controller|service)\.cs$).*\.cs$
+
+# service.ts
+(?i).*service\.ts$
+
+# interceptor.ts
+(?i).*interceptor\.ts$
+
+# other .ts (not service or interceptor)
+(?i)(?!.*(service|interceptor)\.ts$).*\.ts$
+
+# .js
+(?i).*\.js$
+
+# .cshtml
+(?i).*\.cshtml$
+
+# .html
+(?i).*\.html$
+
+# .css
+(?i).*\.css$
+
+# .txt
+(?i).*\.txt$
+
+# .json
+(?i).*\.json$
+
+# other
+(?i)(?<!controller\.cs$)(?<!service\.cs$)(?!.*\.(cs|ts|js|cshtml|html|css|txt)$).*

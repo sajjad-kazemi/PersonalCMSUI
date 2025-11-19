@@ -40,3 +40,6 @@ CMSUI/typings
 # System files
 CMSUI/.DS_Store
 CMSUI/Thumbs.db
+
+# .vs/
+.vs/*
