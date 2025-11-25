@@ -1,120 +1,59 @@
-<div align="center">
-  <h1>🚀 Angular Example App</h1>
+# CMSUI
 
-  <p>
-    Your all-in-one <strong>real-world</strong> Angular starter — built for <strong>learning</strong>, <strong>productivity</strong>, and <strong>scaling</strong>.
-    <br><br>
-    Crafted with ❤️ to showcase real best practices in action: standalone components, signals, routing, i18n, authentication and more.
-    <br><br>
-    <a href="https://angular-example-app.netlify.app/" target="_blank"><strong>🔥 Live Demo</strong></a>
-    <br><br>
-    <img src="https://res.cloudinary.com/ismaestro/image/upload/angularexampleapp/assets/images/ash-pikachu.png" alt="Demo example" width="150"/>
-  </p>
-</div>
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.5.
 
----
+## Development server
 
-## 📦 Why This Project?
-
-Whether you're just starting with Angular or looking for a solid base for your next app, this project has you covered.
-
-- ✅ **Beginner-friendly**: Clean code, best practices, and detailed structure.
-- ✅ **Production-ready**: Real APIs, authentication, modular architecture.
-- ✅ **Feature-rich**: Not just a to-do list! Real-world logic you’ll use in any serious project.
-- ✅ **Made with love**: Built by passionate developers, for the community.
-
----
-
-## 🛠️ Getting Started
+To start a local development server, run:
 
 ```bash
-npm i
-npm start
+ng serve
 ```
 
----
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-## 🚨 Live Status
+## Code scaffolding
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/f593abee-25b9-424a-bd54-6bc52aff7230/deploy-status)](https://app.netlify.com/sites/angular-example-app/deploys)
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
----
+```bash
+ng generate component component-name
+```
 
-## 🌍 Backend API
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-This app connects to a real backend powered by NestJS, PostgreSQL, and Prisma, deployed on Fly.io. You can explore the codebase [here](https://github.com/Ismaestro/nestjs-example-app).
+```bash
+ng generate --help
+```
 
----
+## Building
 
-## ✨ Features
+To build the project run:
 
-|                         |                                                     |
-| ----------------------- | --------------------------------------------------- |
-| ✅ Angular 20           | Using the latest version                            |
-| ✅ Internationalization | i18n with English and Spanish                       |
-| ✅ Authentication       | JWT-based, real login flow                          |
-| ✅ Routing & Guards     | Functional guards with lazy-loaded routes           |
-| ✅ Responsive Design    | Mobile-first layouts with Flexbox and Grid          |
-| ✅ APIs                 | Example integration with the PokeAPI                |
-| ✅ Shoelace Components  | Accessible and modern UI components                 |
-| ✅ NgOptimizedImage     | Fast image loading with Angular's directive         |
-| ✅ SSG & Prerendering   | Static Site Generation for main and Pokémon pages   |
-| ✅ Animations           | Smooth transitions with Angular Animations          |
-| ✅ Clean Architecture   | Modular folder structure following best practices   |
-| ✅ SASS & BEM           | Maintainable and scalable styling                   |
-| ✅ Tests E2E            | Using Playwright and also with best practices (POM) |
-| ✅ Lighthouse           | Verifying web performance with defined thresholds   |
-| 🧪 Testing              | Unit (coming soon!)                                 |
+```bash
+ng build
+```
 
----
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## 🧩 Roadmap
+## Running unit tests
 
-- [ ] Component & service testing with Angular Testing Library
-- [ ] End-to-End tests with Playwright
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
----
+```bash
+ng test
+```
 
-## 🐛 Found a bug? Got an idea?
+## Running end-to-end tests
 
-We love feedback! If something doesn't work or you think of a cool new feature, [open an issue](https://github.com/Ismaestro/angular-example-app/issues/new) or contribute directly with a PR.
+For end-to-end (e2e) testing, run:
 
----
+```bash
+ng e2e
+```
 
-## 🤝 Contributors
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://magicalyak.org"><img src="https://avatars.githubusercontent.com/u/6165889?v=4?s=100" width="100px;" alt="Tom Gamull"/><br /><sub><b>Tom Gamull</b></sub></a><br /><a href="#infra-magicalyak" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mansya"><img src="https://avatars.githubusercontent.com/u/33461607?v=4?s=100" width="100px;" alt="mansyaprime"/><br /><sub><b>mansyaprime</b></sub></a><br /><a href="#code-mansya" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/codeimmortal"><img src="https://avatars.githubusercontent.com/u/16804408?v=4?s=100" width="100px;" alt="codeimmortal"/><br /><sub><b>codeimmortal</b></sub></a><br /><a href="#code-codeimmortal" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/tomasfse"><img src="https://avatars.githubusercontent.com/u/22914697?v=4?s=100" width="100px;" alt="tomasfse"/><br /><sub><b>tomasfse</b></sub></a><br /><a href="#code-tomasfse" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://golu7679.github.io"><img src="https://avatars.githubusercontent.com/u/55990159?v=4?s=100" width="100px;" alt="golu"/><br /><sub><b>golu</b></sub></a><br /><a href="#code-golu7679" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/microsoft/Secure-Supply-Chain/"><img src="https://avatars.githubusercontent.com/u/90811840?v=4?s=100" width="100px;" alt="rancyr"/><br /><sub><b>rancyr</b></sub></a><br /><a href="#code-v-rr" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://www.codingphase.com"><img src="https://avatars.githubusercontent.com/u/26421899?v=4?s=100" width="100px;" alt="codingphasedotcom"/><br /><sub><b>codingphasedotcom</b></sub></a><br /><a href="#code-codingphasedotcom" title="Code">💻</a></td>
-    </tr>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/scip92"><img src="https://avatars.githubusercontent.com/u/15237896?v=4?s=100" width="100px;" alt="Max"/><br /><sub><b>Max</b></sub></a><br /><a href="#code-scip92" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/HerbertKarajan"><img src="https://avatars.githubusercontent.com/u/20851191?v=4?s=100" width="100px;" alt="Karajan"/><br /><sub><b>Karajan</b></sub></a><br /><a href="#code-HerbertKarajan" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/carlchandev"><img src="https://avatars.githubusercontent.com/u/34772941?v=4?s=100" width="100px;" alt="Carl Chan"/><br /><sub><b>Carl Chan</b></sub></a><br /><a href="#code-carlchandev" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/dyeimys"><img src="https://avatars.githubusercontent.com/u/4250372?v=4?s=100" width="100px;" alt="Dyeimys Franco Correa"/><br /><sub><b>Dyeimys Franco Correa</b></sub></a><br /><a href="#code-dyeimys" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://anartz-mugika.com/qwik-book/es/"><img src="https://avatars.githubusercontent.com/u/5081970?v=4?s=100" width="100px;" alt="Anartz Mugika Ledo"/><br /><sub><b>Anartz Mugika Ledo</b></sub></a><br /><a href="#code-mugan86" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/OrlPep"><img src="https://avatars.githubusercontent.com/u/171474908?v=4?s=100" width="100px;" alt="OrlPep"/><br /><sub><b>OrlPep</b></sub></a><br /><a href="#orlpep" title="Code">💻</a></td>
-    </tr>
-  </tbody>
-</table>
+## Additional Resources
 
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
----
-
-## License
-
-This project is licensed under the [MIT License](https://github.com/Ismaestro/angular-example-app/blob/master/LICENSE).
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

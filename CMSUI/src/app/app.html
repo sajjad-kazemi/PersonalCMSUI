@@ -1,0 +1,13 @@
+header
+
+<router-outlet />
+<mat-toolbar>
+    <button mat-icon-button [matMenuTriggerFor]="themeMenu"><mat-icon>format_color_fill</mat-icon></button>
+    <mat-menu #themeMenu="matMenu">
+        @for (item of themeService.getThemes(); track item.id) {
+            <button mat-menu-item (click)="themeService.setTheme(item.id)"></button>
+        }
+    </mat-menu>
+    
+</mat-toolbar>
+footer
