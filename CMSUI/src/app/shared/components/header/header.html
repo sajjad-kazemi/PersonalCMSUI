@@ -1,1 +1,14 @@
-<p>header works!</p>
+<mat-toolbar color="primary">
+    <button matIconButton routerLink="/">
+        <mat-icon>home</mat-icon>
+    </button>
+    
+    <span class="spacer"></span>
+    <mat-form-field appearance="fill">
+        <mat-label>Theme</mat-label>
+        <mat-select [value]="currentTheme" (selectionChange)="onThemeChange($event.value)">
+                <mat-option value="light-theme">Light</mat-option>
+                <mat-option value="dark-theme">Dark</mat-option>
+        </mat-select>
+    </mat-form-field>
+</mat-toolbar>
